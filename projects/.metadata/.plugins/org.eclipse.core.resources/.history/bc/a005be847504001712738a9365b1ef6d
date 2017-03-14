@@ -1,0 +1,32 @@
+ /*
+	Tyler Patterson
+	7 March 2017 
+*/
+ 
+import java.util.Scanner;
+
+public class Quiz {
+
+	private Question[] questions;
+	
+	public Quiz() {
+		
+	}
+	
+	public void Quiz() {
+		
+	}
+
+	private void Add() {
+
+		
+		
+	}
+	
+	private void displayQuiz() {
+		
+		
+		
+	}
+	
+}

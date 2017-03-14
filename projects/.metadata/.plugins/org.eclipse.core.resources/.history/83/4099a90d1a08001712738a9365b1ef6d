@@ -1,0 +1,15 @@
+/*
+ * Tyler Patterson
+ * March 2017
+ */
+
+public class Account {
+
+	private enum ASSETS {Grain, Hay, Fruit, Cows}
+	private 
+	
+	public Account() {
+		
+	}
+	
+}

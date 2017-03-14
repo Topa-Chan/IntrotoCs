@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+/*
+ * Tyler Patterson
+ * 7 March 2017
+ */
+
+public class QuizTime {
+
+	static Scanner scan = new Scanner(System.in);
+	String question;
+	String answer;
+	String choice;
+	
+	public static void main(String[] args) {
+		
+		QuizTime quiz = new QuizTime();
+		quiz.run();
+		
+	}
+	
+	public void run() {
+		System.out.println("Would You Like To Add A Question?");
+		System.out.print("Please Entre y/n: ");
+		choice = scan.next();
+		if (choice.equals("y") || choice.equals("Y")) {
+			System.out.println("What Is Your Question?");
+			System.out.print("Please Entre Your Question: ");
+			question = scan.nextLine();	
+			System.out.println("What Is Your Answer?");
+			System.out.print("Please Entre Your Answer: ");
+			answer = scan.nextLine();
+		} else {
+			System.out.println("Okay.");
+		}
+		
+		System.out.println(question);
+		System.out.println(answer);
+	
+	}
+
+}

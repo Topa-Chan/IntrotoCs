@@ -1,0 +1,34 @@
+
+public class PairOfDice {
+
+	static Die d1 = new Die();
+	static Die d2 = new Die();
+	
+	static int num1;
+	static int num2;
+	static int num3;
+	
+	public static void main(String[] args) {
+		
+		Roll();
+		
+	}
+	
+	private static void Roll() {
+		
+		num1 = d1.roll();
+		num2 = d2.roll();
+		PrintValues();
+		
+	}
+	
+	public static void PrintValues() {
+		
+		System.out.println("The Value Of Die 1 Is: " + num1);
+		System.out.println("The Value Of Die 2 Is: " + num2);
+		num3 = num1 + num2;
+		System.out.println("The Sum Of The Dice Is: " + num3);
+		
+	}
+	
+}

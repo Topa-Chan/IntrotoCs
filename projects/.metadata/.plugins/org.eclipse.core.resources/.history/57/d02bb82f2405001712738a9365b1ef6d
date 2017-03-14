@@ -1,0 +1,46 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/*
+ * Tyler Patterson
+ * 7 March 2017
+ */
+
+public class QuizTime {
+
+	static BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
+	String question;
+	String answer;
+	String choice;
+	
+	public static void main(String[] args) throws IOException {
+		
+		(new QuizTime()).run();
+		
+	}
+	
+	public void run() throws IOException {
+		System.out.println("Would You Like To Add A Question?");
+		System.out.print("Please Entre y/n: ");
+		System.out.println();
+		choice = scan.readLine();
+		if (choice.equals("y") || choice.equals("Y")) {
+			System.out.println("What Is Your Question?");
+			System.out.print("Please Entre Your Question: ");
+			question = scan.readLine();	
+			System.out.println();
+			System.out.println("What Is Your Answer?");
+			System.out.print("Please Entre Your Answer: ");
+			answer = scan.readLine();
+			Quiz quiz;
+			quiz = new Quiz();
+			quiz.Add(new Question(question, answer));
+		} else {
+			System.out.println("Okay.");
+		}
+		
+	
+	}
+
+}

@@ -1,0 +1,47 @@
+
+public class MyString {
+
+	private String value;
+	private String reverse;
+	
+	public MyString() {
+		
+	}
+
+	public MyString(String value) {
+		this.value = value;
+	}
+	
+	public MyString(long[] value) {
+		String temp = "";
+		for (int i = 0; i < value.length; i++) {
+			temp += (char) value[i];
+		}
+		this.value = temp;
+	}
+	
+//	public MyString(String reverse) {
+//		
+//	}
+	
+	public int length() {
+		return this.value.length();
+	}
+	
+	@Override
+	public String toString() {
+		return this.reverse;
+	}
+
+	public String reverse() {
+		for (int x = reverse.length() - 1; x >= 0; x--) {
+			System.out.print(reverse.charAt(x));
+		}
+		return this.reverse;
+	}
+	
+	public String charAt(int i) {
+		return this.reverse;
+	}
+	
+}

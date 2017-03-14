@@ -1,0 +1,19 @@
+import java.io.IOException;
+
+/*
+ * Tyler Patterson
+ * 7 March 2017
+ */
+
+public class QuizTime {
+
+	
+	public static void main(String[] args) throws IOException {
+		
+		Quiz quizzer = new Quiz();
+		
+		quizzer.Quiz();
+
+	}
+
+}

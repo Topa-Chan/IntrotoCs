@@ -1,0 +1,16 @@
+
+public class MyMath {
+
+	private MyMath() {
+
+	}
+
+	private static double pow(double base, double power) {
+		return Math.pow(base, power);
+	}
+	
+	private static double sqrt(double base) {
+		return Math.sqrt(base);
+	}
+
+}

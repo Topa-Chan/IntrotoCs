@@ -1,0 +1,31 @@
+/*
+ * Tyler Patterson
+ * March 2017
+ */
+
+public class Account {
+
+
+	private enum ASSETS {Grain, Hay, Fruit, Cows}
+	private int balance;
+	private int debt;
+	
+	public Account(int balance, int debt) {
+		this.balance = balance;
+		this.debt = debt;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public int getDebt() {
+		return debt;
+	}
+	
+	@Override
+	public String toString() {
+		return "Account: Balance: $" + balance + " , Debt: $ " + debt;
+	}
+	
+}

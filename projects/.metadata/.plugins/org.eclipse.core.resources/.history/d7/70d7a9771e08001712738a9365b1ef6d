@@ -1,0 +1,74 @@
+/*
+ * Tyler Patterson
+ * March 2017
+ */
+
+public class Account {
+
+	private enum ASSETS {Grain, Hay, Fruit, Cows}
+	private double balance;
+	private double debt;
+	private int grain;
+	private int hay;
+	private int fruit;
+	private int cow;
+	
+	public Account(double balance, double debt) {
+		this.balance = balance;
+		this.debt = debt;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public double getDebt() {
+		return debt;
+	}
+	
+	public int getGrain() {
+		return grain;
+	}
+
+	public void setGrain(int grain) {
+		this.grain = grain;
+	}
+
+	public int getHay() {
+		return hay;
+	}
+
+	public void setHay(int hay) {
+		this.hay = hay;
+	}
+
+	public int getFruit() {
+		return fruit;
+	}
+
+	public void setFruit(int fruit) {
+		this.fruit = fruit;
+	}
+
+	public int getCow() {
+		return cow;
+	}
+
+	public void setCow(int cow) {
+		this.cow = cow;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public void setDebt(double debt) {
+		this.debt = debt;
+	}
+
+	@Override
+	public String toString() {
+		return "Account: Balance: $" + balance + " , Debt: $ " + debt + "\n Assets: " + "Cows: " + cow + "acres, Fruit: " + fruit + " Hay: " + hay + " Grain: " + grain;
+	}
+	
+}

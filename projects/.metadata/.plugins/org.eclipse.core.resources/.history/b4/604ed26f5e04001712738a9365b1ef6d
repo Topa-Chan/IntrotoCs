@@ -1,0 +1,28 @@
+/*
+ * Tyler Patterson
+ * 7 March 2017
+ */
+
+public class Quiz {
+
+	private String[] questions;
+	private String[] answers;
+	
+	public Quiz() {
+		
+	}
+	
+	public void Quiz() {
+		System.out.println("Cows");
+		
+	}
+	
+	private void Add(String[] question, String[] answers) {
+		
+	}
+	
+	private void displayQuiz() {
+		
+	}
+	
+}

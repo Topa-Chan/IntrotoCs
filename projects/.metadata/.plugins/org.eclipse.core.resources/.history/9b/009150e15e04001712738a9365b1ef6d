@@ -1,0 +1,16 @@
+/*
+ * Tyler Patterson
+ * 7 March 2017
+ */
+
+public class QuizTime {
+
+	
+	public static void main(String[] args) {
+		
+		Quiz quizzer = new Quiz();
+		quizzer.Quiz();
+
+	}
+
+}

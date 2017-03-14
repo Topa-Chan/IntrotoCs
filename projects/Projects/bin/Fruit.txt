@@ -1,0 +1,5 @@
+Order:Fruit:Count
+3:Apple:200
+0:Pear:150
+2:Peach:10
+1:Watermellon:15

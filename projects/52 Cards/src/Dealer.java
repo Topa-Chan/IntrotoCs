@@ -1,0 +1,16 @@
+
+public class Dealer {
+
+	public static void main(String[] args) {
+		
+		Dealer deal = new Dealer();
+		deal.run();
+		
+	}
+	
+	public void run() {
+		DeckOfCards deck = new DeckOfCards();
+			deck.shuffle();		
+	}
+
+}

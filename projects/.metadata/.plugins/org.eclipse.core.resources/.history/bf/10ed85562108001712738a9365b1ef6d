@@ -1,0 +1,15 @@
+/*
+ * Tyler Patterson
+ * March 2017
+ */
+
+public class Player {
+	
+	private int position;
+	private Account account;
+
+	public Player(int position) {
+		this.position = position;
+	}
+	
+}

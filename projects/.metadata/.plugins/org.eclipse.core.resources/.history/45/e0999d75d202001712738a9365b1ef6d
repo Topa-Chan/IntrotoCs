@@ -1,0 +1,18 @@
+
+public class Dealer {
+
+	public static void main(String[] args) {
+		
+		Dealer deal = new Dealer();
+		deal.run();
+		
+	}
+	
+	public void run() {
+		int x = 0;
+		DeckOfCards deck = new DeckOfCards();
+		System.out.print(x++);
+		deck.shuffle();
+	}
+
+}

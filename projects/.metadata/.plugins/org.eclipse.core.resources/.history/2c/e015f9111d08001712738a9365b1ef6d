@@ -1,0 +1,80 @@
+/*
+ * Tyler Patterson
+ * March 2017
+ */
+
+import java.util.Scanner;
+
+public class Game {
+	
+	static Scanner scan = new Scanner(System.in);
+	int choice;
+	int value;
+	double balance;
+	double debt;
+	boolean valid = false;
+	Die d = new Die();
+	Deck deck = new Deck();
+	Account account = new Account(balance, debt);
+
+	public static void main(String[] args) {
+		
+		int answer;
+		System.out.println("Welcome To The Farming Game!");
+		System.out.println("Would You Like To Start A New Game?");
+		System.out.print("Please Entre 1 for Yes, or 2 for No: ");
+		answer = scan.nextInt();
+		System.out.println();
+		if (answer == 1) {
+			Game game = new Game();
+			game.run();			
+		} else {
+			System.out.println("Okay, Have A Good Day!");
+		}
+
+	}
+	
+	public void run() {
+		do {
+			System.out.println("Main Menu:");
+			System.out.println("1. View Account.");
+			System.out.println("2. Roll Die.");
+			System.out.println("3. Quit Game.");
+			System.out.print("Please Entre Your Choice: ");
+			choice = scan.nextInt();
+			switch (choice) {
+			case 1: 
+				viewAccount();
+				break;
+			case 2:
+				rollAndMove();
+				break;
+			case 3:
+				quit();
+				break;
+			default:
+				break;
+			}
+		} while (!valid);
+		
+	}
+	
+	public void viewAccount() {
+		System.out.println();
+		System.out.println(account);
+	}
+	
+	public void rollAndMove() {
+		value = d.roll();
+		System.out.println();
+		System.out.println("You Rolled A " + value);
+		
+	}
+	
+	public void quit() {
+		valid = true;
+		System.out.println();
+		System.out.println("Thank You For Playing The Game!");
+	}
+
+}
